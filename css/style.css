@@ -59,6 +59,15 @@ button {
   height: 92px;
   margin-left: 2px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+button:active {
+  background-color: #854dff;
 }
 
 div.horizontal-line {
