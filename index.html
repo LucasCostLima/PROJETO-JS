@@ -59,7 +59,72 @@
 
 
 
-<button class="submit-button" id="submit-button" onclick="">
+<button class="submit-button" id="submit-button" onclick="calculo()" type="button">
+
+
+
+  <script>
+
+
+
+
+    function calculo(){
+day = document.getElementById("dd").value;
+month = document.getElementById("mm").value;
+year = document.getElementById("yy").value;
+
+var dateat = new Date()
+
+var datein = new Date()
+
+
+var months =[]
+months [1] = 'january'
+months [2] = 'February'
+months [3] = 'March'
+months [4] = 'April'
+months [5] = 'May'
+months [6] = 'june'
+months [7] = 'july'
+months [8] = 'August'
+months [9] = 'September'
+months [10] = 'October'
+months [11] = 'November'
+months [12] = 'December'
+
+  console.log(datein.toString())
+
+
+
+  console.log (datein.getTime())
+
+  console.log(datein)
+
+if (month == 1){
+
+  month = months [1]
+
+  var datein = month + day + year
+
+  var milissegundos_datas = Math.abs(dateat - datein)
+
+  console.log(milissegundos_datas)
+
+}
+
+
+
+
+console.log (day + month + year) 
+
+
+
+
+}
+
+
+  </script>
+
 
 
 </button>
@@ -80,6 +145,9 @@
   -- days
 
 </div>  
+
+
+
 
 </section>
 
