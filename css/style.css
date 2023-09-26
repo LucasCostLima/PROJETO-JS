@@ -99,3 +99,7 @@ div.days {
   padding-left: 32px;
   font-size: 82px;
 }
+
+span.result-value {
+  color: #854dff;
+}

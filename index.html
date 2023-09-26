@@ -1,157 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-
-  
-  <title> Age calculator app</title>
-
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-  </style>
-
-
-
-
-
-</head>
-<body>
-
-  <section class="principal">
-<div class="header">
-
-<div class="day">
- <h3>DAY</h3>
-
-<input type="text" id="dd" placeholder="  DD" value="">
-</div>
-
-<div class="month">
- <h3>MONTH</h3> 
-<input type="text" id="mm" placeholder="  MM" value="">  
- 
-</div>
-
-<div class="year"> 
- <h3>YEAR</h3> 
-  
-<input type="text" id="yy" placeholder="  YYYY" value="">    
-
-</div>  
-
-</div>
-
-<div class="button">
-
-
-
-
-<div class="horizontal-line"> </div>  
-
-
-
-<button class="submit-button" id="submit-button" onclick="calculo()" type="button">
-
-
-
-  <script>
-
-
-
-
-    function calculo(){
-day = document.getElementById("dd").value;
-month = document.getElementById("mm").value;
-year = document.getElementById("yy").value;
-
-var dateat = new Date()
-
-var datein = new Date()
-
-
-var months =[]
-months [1] = 'january'
-months [2] = 'February'
-months [3] = 'March'
-months [4] = 'April'
-months [5] = 'May'
-months [6] = 'june'
-months [7] = 'july'
-months [8] = 'August'
-months [9] = 'September'
-months [10] = 'October'
-months [11] = 'November'
-months [12] = 'December'
-
-  console.log(datein.toString())
-
-
-
-  console.log (datein.getTime())
-
-  console.log(datein)
-
-if (month == 1){
-
-  month = months [1]
-
-  var datein = month + day + year
-
-  var milissegundos_datas = Math.abs(dateat - datein)
-
-  console.log(milissegundos_datas)
-
-}
-
-
-
-
-console.log (day + month + year) 
-
-
-
-
-}
-
-
-  </script>
-
-
-
-</button>
-
-</div>
-
-<div class="years">
-  -- years
-
-</div>
-
-<div class="months">
-    -- months
-
-</div>
-  
-<div class="days">
-  -- days
-
-</div>  
-
-
-
-
-</section>
-
-
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Age calculator app</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="principal">
+      <div class="header">
+        <div class="day">
+          <h3>DAY</h3>
+
+          <input type="text" id="dd" placeholder="  DD" value="" />
+        </div>
+
+        <div class="month">
+          <h3>MONTH</h3>
+          <input type="text" id="mm" placeholder="  MM" value="" />
+        </div>
+
+        <div class="year">
+          <h3>YEAR</h3>
+
+          <input type="text" id="yy" placeholder="  YYYY" value="" />
+        </div>
+      </div>
+
+      <div class="button">
+        <div class="horizontal-line"></div>
+
+        <button
+          class="submit-button"
+          id="submit-button"
+          onclick="calculo()"
+          type="button"
+        ></button>
+      </div>
+
+      <div class="years">
+        <span class="result-value" id="result-years">--</span> years
+      </div>
+
+      <div class="months">
+        <span class="result-value" id="result-months">--</span> months
+      </div>
+
+      <div class="days">
+        <span class="result-value" id="result-days">--</span> days
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
