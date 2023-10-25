@@ -52,10 +52,13 @@ input {
 }
 
 button {
+  color: #fff;
   border-radius: 50px;
+  font-weight: bold;
   background-color: #854dff;
+  font-size: 20px;
   border: none;
-  width: 92px;
+  width: 162px;
   height: 92px;
   margin-left: 2px;
   cursor: pointer;
